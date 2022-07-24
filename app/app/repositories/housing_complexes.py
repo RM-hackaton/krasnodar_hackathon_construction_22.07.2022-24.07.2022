@@ -1,6 +1,6 @@
 from typing import List, Optional
-from models.housing_complexes import Complex, ComplexIn
-from db.housing_complexes import housing_complexes
+from ..models.housing_complexes import Complex, ComplexIn
+from ..db.housing_complexes import housing_complexes
 from .base import BaseRepository
 
 
