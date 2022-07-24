@@ -13,7 +13,7 @@ services:
     depends_on:
       - db
   db:
-    image: postgres:11
+    image: postgres:11.14-bullseye
     ports:
       - "32700:5432"
     volumes:
