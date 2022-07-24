@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from .db.base import database
 from .endpoints import commercials, post_data, housing_complexes, houses
 import uvicorn
@@ -12,6 +13,13 @@ app = FastAPI(
         "email": "iosif.polodashvili@mail.ru",
     },
     docs_url="/api/docs",
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=['*'],
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*']
 )
 
 
