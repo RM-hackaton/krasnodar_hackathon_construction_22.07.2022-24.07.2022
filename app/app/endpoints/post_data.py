@@ -1,7 +1,7 @@
-from get_data import get_complexes, get_houses_and_commercials
+from .get_data import get_complexes, get_houses_and_commercials
 from fastapi import APIRouter, Depends
 
-from repositories.post_data import PostDataRepository
+from ..repositories.post_data import PostDataRepository
 from .depends import get_commercial_repository, \
     get_house_repository, \
     get_complex_repository, \

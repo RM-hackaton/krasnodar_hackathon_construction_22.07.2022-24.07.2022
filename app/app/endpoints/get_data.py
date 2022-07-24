@@ -1,9 +1,10 @@
+from numbers import Number
 from re import findall
 
 from requests import get
 
 
-def get_number(text: str) -> int | float:
+def get_number(text: str) -> Number:
     result = findall(r"\d+\.?\d*", text.replace(' ', ''))[0]
     return float(result) if '.' in result else int(result)
 

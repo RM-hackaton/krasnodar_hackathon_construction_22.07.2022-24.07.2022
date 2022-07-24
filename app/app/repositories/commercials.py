@@ -1,6 +1,6 @@
 from typing import List, Optional
-from models.commercials import Commercial, CommercialIn
-from db.commercials import commercials
+from ..models.commercials import Commercial, CommercialIn
+from ..db.commercials import commercials
 from .base import BaseRepository
 
 

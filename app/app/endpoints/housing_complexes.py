@@ -1,6 +1,6 @@
 from typing import List
-from models.housing_complexes import Complex, ComplexIn
-from repositories.housing_complexes import HousingComplexRepository
+from ..models.housing_complexes import Complex, ComplexIn
+from ..repositories.housing_complexes import HousingComplexRepository
 from fastapi import APIRouter, Depends, HTTPException, status, Response
 from .depends import get_complex_repository
 

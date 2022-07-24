@@ -1,11 +1,11 @@
 from typing import List
 
-from models.housing_complexes import Complex
-from models.houses import House
-from models.commercials import Commercial
-from db.housing_complexes import housing_complexes
-from db.houses import houses
-from db.commercials import commercials
+from ..models.housing_complexes import Complex
+from ..models.houses import House
+from ..models.commercials import Commercial
+from ..db.housing_complexes import housing_complexes
+from ..db.houses import houses
+from ..db.commercials import commercials
 from .base import BaseRepository
 
 

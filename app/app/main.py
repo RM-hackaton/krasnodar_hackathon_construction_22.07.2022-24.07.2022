@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from db.base import database
-from endpoints import commercials, post_data, housing_complexes, houses
+from .db.base import database
+from .endpoints import commercials, post_data, housing_complexes, houses
 import uvicorn
 
 app = FastAPI(

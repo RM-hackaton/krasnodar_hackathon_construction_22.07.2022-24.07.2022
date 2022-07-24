@@ -1,6 +1,6 @@
 from typing import List
-from models.commercials import Commercial, CommercialIn
-from repositories.commercials import CommercialsRepository
+from ..models.commercials import Commercial, CommercialIn
+from ..repositories.commercials import CommercialsRepository
 from fastapi import APIRouter, Depends, HTTPException, status, Response
 from .depends import get_commercial_repository
 

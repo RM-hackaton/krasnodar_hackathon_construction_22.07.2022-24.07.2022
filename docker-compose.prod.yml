@@ -21,7 +21,16 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 1234512345210Ip
-      POSTGRES_DB: сonstruction_objects
+      POSTGRES_DB: postgres
+  pgAdmin:
+    image: dpage/pgadmin4:6.4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@email.com
+      - PGADMIN_DEFAULT_PASSWORD=1
+    volumes:
+      - ./docker-data/pgAdmin:/var/lib/pgadmin
+    ports:
+      - 8080:80
   nginx:
     build: ./nginx
     volumes:

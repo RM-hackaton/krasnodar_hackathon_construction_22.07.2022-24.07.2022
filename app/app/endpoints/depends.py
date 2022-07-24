@@ -1,8 +1,8 @@
-from repositories.housing_complexes import HousingComplexRepository
-from repositories.houses import HouseRepository
-from repositories.commercials import CommercialsRepository
-from repositories.post_data import PostDataRepository
-from db.base import database
+from ..repositories.housing_complexes import HousingComplexRepository
+from ..repositories.houses import HouseRepository
+from ..repositories.commercials import CommercialsRepository
+from ..repositories.post_data import PostDataRepository
+from ..db.base import database
 
 
 def get_complex_repository() -> HousingComplexRepository:

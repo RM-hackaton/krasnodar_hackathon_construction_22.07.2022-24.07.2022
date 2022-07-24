@@ -1,6 +1,6 @@
 from typing import List, Optional
-from models.houses import House, HouseIn
-from db.houses import houses
+from ..models.houses import House, HouseIn
+from ..db.houses import houses
 from .base import BaseRepository
 
 

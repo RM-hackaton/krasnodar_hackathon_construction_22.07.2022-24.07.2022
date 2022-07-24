@@ -1,6 +1,6 @@
 from typing import List
-from models.houses import House, HouseIn
-from repositories.houses import HouseRepository
+from ..models.houses import House, HouseIn
+from ..repositories.houses import HouseRepository
 from fastapi import APIRouter, Depends, HTTPException, status, Response
 from .depends import get_house_repository
 
